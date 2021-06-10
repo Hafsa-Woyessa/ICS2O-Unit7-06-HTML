@@ -3,12 +3,12 @@ let guess = 0
 
 while (guess !== age) {
   guess = prompt('Guess my age')
-  guess = paresInt(guess)
-  if (guess == age) {
+  guess = parseInt(guess)
+  if (guess === age) {
     alert('You win!')
   } else if (guess < age) {
-  alert('You guessed too small.Please try again')
-  }  else if (guess > age) {
-   alert('You guessed too big.Please try again')
+    alert('You guessed too small.Please try again')
+  } else if (guess > age) {
+    alert('You guessed too big.Please try again')
   }
 }
